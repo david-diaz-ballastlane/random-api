@@ -14,4 +14,9 @@ app.get('/rng', (req, res) => {
 // Comment
 // Comment
 // Comment
+app.get('/rng/int', (req, res) => {
+  const rng = Math.round(Math.random() * Number.MAX_SAFE_INTEGER)
+  res.status(200).send(String(rng))
+})
+
 app.listen(3000, () => console.log('Server running in port 3000'))
