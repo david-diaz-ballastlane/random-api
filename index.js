@@ -11,9 +11,6 @@ app.get('/rng', (req, res) => {
   res.status(200).send(String(rng))
 })
 
-// Comment
-// Comment
-// Comment
 app.get('/rng/int', (req, res) => {
   const rng = Math.round(Math.random() * Number.MAX_SAFE_INTEGER)
   res.status(200).send(String(rng))
